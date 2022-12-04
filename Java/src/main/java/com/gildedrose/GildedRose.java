@@ -1,10 +1,21 @@
 package com.gildedrose;
 
 class GildedRose {
-    Item[] items;
+    private Item[] items;
+
+    public GildedRose() {
+    }
 
     public GildedRose(Item[] items) {
         this.items = items;
+    }
+
+    public void setItems(Item[] items) {
+        this.items = items;
+    }
+
+    public Item[] getItems() {
+        return items;
     }
 
     public void updateQuality() {
